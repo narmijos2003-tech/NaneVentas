@@ -1,0 +1,438 @@
+/* LOGO CENTRAL DE LA PORTADA */
+
+.logo-portada {
+    width: 190px;
+    height: 190px;
+
+    display: block;
+    margin: 0 auto 25px;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 50%;
+    border: 5px solid white;
+
+    background-color: white;
+
+    box-shadow: 0 12px 35px rgba(111, 74, 177, 0.25);
+
+    transition: transform 0.3s ease;
+}
+
+.logo-portada:hover {
+    transform: scale(1.05);
+}
+
+/* LOGO EN CELULARES */
+
+@media (max-width: 650px) {
+    .logo-portada {
+        width: 145px;
+        height: 145px;
+        margin-bottom: 20px;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #252033;
+}
+
+
+/* MENÚ */
+
+.menu {
+    width: 100%;
+    min-height: 75px;
+    padding: 15px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background-color: white;
+    box-shadow: 0 2px 15px rgba(95, 64, 130, 0.12);
+}
+
+.menu h2 {
+    color: #7a42e8;
+}
+
+.menu nav {
+    display: flex;
+    gap: 28px;
+}
+
+.menu nav a {
+    color: #3d3748;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu nav a:hover {
+    color: #eb4fa5;
+}
+
+
+/* PORTADA */
+
+.portada {
+    min-height: 650px;
+    padding: 80px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(255, 219, 241, 0.85),
+            rgba(219, 226, 255, 0.85)
+        ),
+        url("fondo.jpeg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.contenido-portada {
+    max-width: 800px;
+}
+
+.portada h1 {
+    margin-bottom: 20px;
+
+    font-family: Georgia, serif;
+    font-size: 75px;
+
+    background: linear-gradient(90deg, #ec4fa7, #665cff);
+    background-clip: text;
+    color: transparent;
+}
+
+.portada p {
+    margin-bottom: 35px;
+    font-size: 21px;
+    line-height: 1.6;
+}
+
+.boton-principal {
+    display: inline-block;
+    padding: 17px 30px;
+
+    border-radius: 30px;
+
+    background: linear-gradient(90deg, #ee5aac, #745cff);
+    color: white;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    box-shadow: 0 12px 30px rgba(116, 92, 255, 0.3);
+}
+
+.boton-principal:hover {
+    transform: translateY(-3px);
+}
+
+
+/* SECCIONES */
+
+.seccion {
+    padding: 90px 8%;
+}
+
+.seccion > h2 {
+    margin-bottom: 15px;
+
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 48px;
+}
+
+.descripcion {
+    max-width: 700px;
+    margin: 0 auto 45px;
+
+    text-align: center;
+    color: #777184;
+    line-height: 1.6;
+}
+
+
+/* CONTACTO */
+
+.tarjetas-contacto {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.tarjeta-contacto {
+    padding: 30px 22px;
+
+    text-align: center;
+
+    background-color: white;
+    border: 1px solid #eee9f5;
+    border-radius: 22px;
+
+    box-shadow: 0 12px 35px rgba(67, 40, 95, 0.08);
+
+    transition: 0.3s;
+}
+
+.tarjeta-contacto:hover {
+    transform: translateY(-7px);
+}
+
+.icono {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 18px;
+    font-size: 28px;
+}
+
+.icono.whatsapp {
+    background-color: #e4faed;
+}
+
+.icono.grupo {
+    background-color: #f5e8ff;
+}
+
+.icono.canal {
+    background-color: #e8efff;
+}
+
+.tarjeta-contacto h3 {
+    margin-bottom: 12px;
+    font-size: 21px;
+}
+
+.tarjeta-contacto p {
+    min-height: 50px;
+    margin-bottom: 20px;
+
+    color: #817a8c;
+    line-height: 1.5;
+}
+
+.boton {
+    display: block;
+    width: 100%;
+    padding: 13px;
+
+    border-radius: 12px;
+
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.whatsapp-boton {
+    background-color: #20bf68;
+}
+
+.grupo-boton {
+    background: linear-gradient(90deg, #ec57ab, #9854ef);
+}
+
+.canal-boton {
+    background-color: #5269e8;
+}
+
+
+/* RESEÑAS */
+
+.seccion-resenas {
+    background-color: #faf8fd;
+}
+
+.contenedor-resenas {
+    max-width: 1150px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.tarjeta-resena {
+    overflow: hidden;
+
+    background-color: white;
+    border: 1px solid #eee9f5;
+    border-radius: 22px;
+
+    box-shadow: 0 15px 40px rgba(67, 40, 95, 0.1);
+
+    transition: 0.3s;
+}
+
+.tarjeta-resena:hover {
+    transform: translateY(-7px);
+}
+
+.tarjeta-resena img {
+    width: 100%;
+    height: 280px;
+
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.informacion-resena {
+    padding: 25px;
+}
+
+.estrellas {
+    margin-bottom: 14px;
+
+    color: #ffb516;
+    font-size: 21px;
+    letter-spacing: 3px;
+}
+
+.informacion-resena p {
+    min-height: 80px;
+
+    color: #5e5868;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.informacion-resena h3 {
+    margin-top: 18px;
+    margin-bottom: 5px;
+}
+
+.informacion-resena span {
+    color: #20a861;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/* BOTÓN FLOTANTE */
+
+.whatsapp-flotante {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+
+    border-radius: 50%;
+
+    background-color: #20c56a;
+    color: white;
+
+    text-decoration: none;
+    font-size: 28px;
+
+    box-shadow: 0 10px 25px rgba(32, 197, 106, 0.4);
+}
+
+
+/* PIE DE PÁGINA */
+
+footer {
+    padding: 45px 20px;
+
+    text-align: center;
+
+    background-color: #21183a;
+    color: white;
+}
+
+footer p {
+    margin: 12px 0 25px;
+    color: #d1cadc;
+}
+
+
+/* CELULARES Y TABLETAS */
+
+@media (max-width: 1000px) {
+    .tarjetas-contacto {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contenedor-resenas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+    .menu {
+        padding: 15px 20px;
+    }
+
+    .menu nav {
+        display: none;
+    }
+
+    .portada {
+        min-height: 550px;
+    }
+
+    .portada h1 {
+        font-size: 47px;
+    }
+
+    .portada p {
+        font-size: 17px;
+    }
+
+    .seccion {
+        padding: 65px 20px;
+    }
+
+    .seccion > h2 {
+        font-size: 36px;
+    }
+
+    .tarjetas-contacto,
+    .contenedor-resenas {
+        grid-template-columns: 1fr;
+    }
+
+    .tarjeta-resena img {
+        height: auto;
+        max-height: 500px;
+    }
+}
